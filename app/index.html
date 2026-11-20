@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Atlas — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="atlas-header-progress-and-spoiler-controls">
+  <div class="brand-block">
+    <h1>Leonida Atlas</h1>
+    <p class="brand-sub">Grand Theft Auto VI · PlayStation 5 trophy guide &amp; tracker · every guide step cited</p>
+  </div>
+  <div class="header-stats">
+    <p id="progress-count-earned-of-55">0 of 55 earned</p>
+    <p id="grade-tallies-by-medal">1 platinum · 2 gold · 6 silver · 46 bronze</p>
+    <p id="saved-in-this-browser-indicator">Saved in this browser</p>
+  </div>
+  <div class="header-controls">
+    <label id="spoiler-toggle-masks-hidden-trophies" class="spoiler-switch">
+      <input type="checkbox" id="show-spoilers-checkbox">
+      <span class="switch-text">Show spoilers</span>
+      <span id="spoiler-state-label" class="switch-state">Hidden trophies covered until earned</span>
+    </label>
+    <div class="header-buttons">
+      <button id="export-progress-header-button" type="button">Export</button>
+      <label class="import-label">Import <input id="import-progress-header-input" type="file" accept="application/json" hidden></label>
+    </div>
+  </div>
+</header>
+
+<section id="audit-strip-computed-from-data" aria-label="Guide audit, computed from the data"></section>
+
+<nav id="view-tabs-tracker-roadmap-missables-sources">
+  <button type="button" data-view="tracker" class="tab active">Tracker</button>
+  <button type="button" data-view="roadmap" class="tab">Roadmap</button>
+  <button type="button" data-view="missables" class="tab">Missables</button>
+  <button type="button" data-view="sources" class="tab">Sources</button>
+  <span id="next-up-in-roadmap-order" class="next-up-line"></span>
+</nav>
+
+<main>
+  <section id="view-tracker" class="view">
+    <div class="tracker-controls">
+      <input id="search-trophies-by-name" type="search" placeholder="Search trophies by name…" aria-label="Search trophies by name">
+      <div id="filters-with-counts" role="group" aria-label="Kind filters with counts"></div>
+      <label id="hide-earned-toggle" class="mini-toggle">
+        <input type="checkbox" id="hide-earned-checkbox"> Hide earned
+      </label>
+      <label class="grade-label">Grade
+        <select id="grade-filter-select">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+    </div>
+    <div class="tracker-layout">
+      <div id="tracker-list-grouped-by-roadmap-stage"></div>
+      <aside id="trophy-detail-with-cited-steps"></aside>
+    </div>
+    <section id="save-and-settings-export-import">
+      <h2>Save &amp; settings</h2>
+      <p>Progress, counters, notes and the spoiler setting are saved in this browser (localStorage) as you go. Take the file with you:</p>
+      <div class="save-buttons">
+        <button id="export-progress-button" type="button">Export progress to a file</button>
+        <label class="import-label">Import progress from a file <input id="import-progress-input" type="file" accept="application/json" hidden></label>
+        <button id="reset-progress-button" type="button">Reset everything</button>
+      </div>
+      <p id="save-status-line" class="save-status">Nothing exported yet this session.</p>
+    </section>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <div id="roadmap-stages-with-progress"></div>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <div id="missables-levels-watch-and-disputes"></div>
+  </section>
+
+  <section id="view-sources" class="view" hidden>
+    <div id="sources-dated-table-with-coverage"></div>
+  </section>
+</main>
+
+<footer id="atlas-footer-offline-note">
+  <p>Leonida Atlas runs fully offline from its own files. Guide facts are cited per step to the sources on the Sources tab, read 20 Nov 2026; where sources disagree, both versions are shown, and what no source has confirmed is flagged unconfirmed rather than guessed.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
